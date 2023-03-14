@@ -18,6 +18,9 @@
             .then(data =>{
                 document.getElementById("content").innertText = data.people;
             } )
+            .catch((e)) => {
+                console.error("Error:", e);
+            }
     </script>
 </body>
 </html>
